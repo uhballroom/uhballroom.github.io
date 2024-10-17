@@ -1,4 +1,5 @@
 # site properties and page defaults
+domain: uhballroom.github.io
 title: ACM@MANOA
 subtitle: The Association for Computing Machinery at the University of Hawaii at Manoa
 description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
