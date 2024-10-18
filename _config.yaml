@@ -42,27 +42,27 @@ service_worker: false
 ### jekyll settings
 
 # front matter defaults
-#defaults:
+defaults:
   # all markdown files
-#  - scope:
-#      path: ""
-#    values:
-#      layout: default
-#  # markdown files in /_members
-#  - scope:
-#      type: "members"
-#    values:
-#      layout: member
-#  # markdown files in /_posts
-#  - scope:
-#      type: "posts"
-#    values:
-#      layout: post
-#  # markdown files in /_clubs
-#  - scope:
-#      type: "clubs"
-#    values:
-#      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: default
+  # markdown files in /_members
+  - scope:
+      type: "members"
+    values:
+      layout: member
+  # markdown files in /_posts
+  - scope:
+      type: "posts"
+    values:
+      layout: post
+  # markdown files in /_clubs
+  - scope:
+      type: "clubs"
+    values:
+      layout: post
 
 #collections:
 #  # generate page for each member
@@ -82,6 +82,12 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-last-modified-at
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-seo-tag
+  - jekyll-redirect-from
 
 # code block syntax highlighting
 #highlighter: rouge
@@ -94,9 +100,9 @@ plugins:
 #  sass_dir: _styles
 
 # force jekyll to include certain files/folders
-#include:
-#  - _styles
-#  - _scripts
+include:
+  - _styles
+  - _scripts
 
 # force jekyll to exclude certain files/folders
 #exclude:
