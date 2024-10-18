@@ -110,6 +110,12 @@ include:
 #  - LICENSE.md
 #  - CITATION.cff
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+
 #webrick:
 #  headers:
 #    Cache-Control: no-cache, no-store, must-revalidate
